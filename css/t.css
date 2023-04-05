@@ -1,0 +1,837 @@
+*
+{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	list-style: none;
+	font-family: 'Algerian' , sans-serif;
+	transition: .6s;
+}
+
+.content
+{
+	width: 80%;
+	margin: auto;
+}
+
+/*
+===============
+NAVBAR SECTION
+===============
+*/
+.nav
+{
+	color: #2B3B1A;
+	width: 100%;
+	height: auto;
+	position:fixed;
+	z-index: 1000;
+}
+
+.nav .logo
+{
+	color:#2B3B1A;
+	
+}
+
+.nav .containt
+{
+	width: 80%;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin: auto;
+	padding: 25px;
+}
+
+.nav .containt i 
+{
+	font-size:40px;
+	color: #2B3B1A;
+}
+
+.nav .containt label
+{
+	display: block;
+	width: 15px;
+	height: 15px;
+	padding: 20px;
+	cursor: pointer;
+}
+
+.nav .containt input
+{
+	display: none;
+}
+
+.nav input , .nav label
+{
+	position: absolute;
+	top: 13px;
+	right: 25px;
+}
+
+
+.nav .containt input:checked ~ .nav-list 
+{
+	display: block;
+}
+
+
+.nav .containt .nav-list 
+{
+	list-style: none;
+	padding-top: 15px;
+	display: block;
+	float:left;
+}
+
+.nav .containt .nav-list .nav-items
+{
+	display: inline-block;
+	transition: .5s;
+	margin-left: 30px;
+	height: 30px;
+}
+
+.nav .containt .nav-list .nav-items:hover
+{
+		transform: scale(1.1);
+		color:#fff;
+}
+.nav .containt .nav-list .nav-items a 
+{
+	text-decoration: none;
+	color: #2B3B1A;
+	font-size: 18px;
+}
+	
+
+.nav .login 
+{
+	background: transparent;
+	font-size: 13px;
+	border: 2px solid #fff;
+	border-radius: 30px;
+	padding: 10px 20px;
+	color: #2B3B1A;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+.nav .login:hover
+{
+	transform: scale(1.1);
+	background:rgba(255,255,255,.6);
+}
+
+@media (max-width:1280px)
+{
+	.nav .logo
+		{
+			width: 40%;
+			padding: 15px;
+		}
+		
+	.nav .nav-list 
+		{
+			width:55%;
+			padding-left:20px;
+		}
+}
+ 
+  
+@media (min-width:992px)
+{
+	.nav .containt label
+	{
+		display: none;
+	}
+	
+}
+
+@media (max-width:991px)
+{
+	.nav .containt .logo
+		{
+			width: 100%;
+			float:none;
+		}
+		
+		
+	.nav .containt .nav-list 
+		{
+			width:100%;
+			float: none;
+			margin-top: 20px;
+			display:none;
+		}
+		
+		.nav .containt .nav-list .nav-items
+		{
+			display: block;
+			text-align: center;
+			transition: .4s;
+		} 
+		.nav .login 
+		{
+			 
+			font-size: 15px;
+			 width: 14%;
+			 text-align:center;
+			 position: absolute;
+			 right: 37%;
+			display: none;
+		}
+		.nav .containt label
+		{
+			display:absolute;
+			right: 10%;
+		}
+		.nav .containt i:hover
+		{
+			color: #fff;
+			font-size: 42px;
+		}
+		
+}
+/*
+============
+HOME SECTION
+============
+*/
+.home
+{
+	background-image: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.5)), url("../images/travel_site_img/home/pexels-errin-casano-2356045.jpg");
+	width: 100%;
+	height: 100vh;
+	background-size: cover;
+	background-position: center;
+}
+
+.home .introduction
+{
+	text-align: center;
+	color: #fff;
+	padding-top:23%;
+	height: auto;
+}
+
+.home .introduction .intro-title
+{
+	padding-bottom: 35px;
+	font-size: 50px;
+}
+
+.home .introduction .intro-desc
+{
+	padding-bottom: 20px;
+	font-size: 20px;
+}
+
+
+.home .introduction form input:first-child
+{
+	width: 40%;
+	margin: auto;
+	outline: none;
+	border-radius: 5px;
+	padding: 15px;
+	position: relative;
+	margin-top: 20px;
+	border: none;
+	font-size:15px;
+}
+	
+.home .introduction form input:last-child
+{
+	border-radius: 5px;
+	background: linear-gradient(#2B3B1A,#678A2E);
+	padding: 12px 20px;
+	font-size:15px;
+	border: none;
+	color:#fff;
+	position: absolute;
+	right:34.2%;
+	top:60.3%;
+	cursor:pointer;
+}
+
+.home .introduction form input:last-child:hover
+{
+	transform: scale(.9);
+}
+/*
+=================
+Services SECTION
+=================
+*/
+.Services
+{
+	width: 100%;
+	padding: 100px 0;
+	background:rgba(73,65,23,0.1);
+}
+
+.Services .containt .ho-con .con-title
+{
+	 padding-bottom: 60px;
+	 width: 80%;
+	 margin: auto;
+	 color:#678A2E;
+}
+
+.Services .containt .ho-con .con-ho
+{
+	display: flex;
+	justify-content: space-around;
+	margin-top: 30px;
+	width: 80%;
+	margin: auto;
+	color:#25a117;
+}
+
+.Services .containt .ho-con .con-ho .ho-item
+{
+	 width: 20%;
+	 height: auto;
+	 border: 1px solid #9cb071;
+	 text-align: center;
+	 line-height: 1.2;
+	transition: .6s;	
+	cursor: pointer;
+}
+
+.Services .containt .ho-con .con-ho .ho-item:hover
+{
+	 border: 1px solid #98ff98;
+	 box-shadow: 7px 7px 10px rgba(152,255,125,0.2), -7px -7px 10px  rgba(152,255,125,0.2);
+}
+
+.Services .containt .ho-con .con-ho .ho-item .item-img
+{
+	margin: 40px 30% 10px 30%;
+	box-shadow:7px 7px 10px rgba(152,255,125,0.2), -7px -7px 10px  rgba(152,255,125,0.2);			 
+}
+
+.Services .containt .ho-con .con-ho .ho-item i
+{
+	margin: 40px 30% 10px 30%;
+	box-shadow:7px 7px 10px rgba(152,255,125,0.2), -7px -7px 10px  rgba(152,255,125,0.2);	
+	width: 50px;
+	height:50px;
+	font-size: 40px;
+	color:#487619;
+}
+
+.Services .containt .ho-con .con-ho .ho-item .item-title
+{
+	line-height: 1.8;
+}
+
+.Services .containt .ho-con .con-ho .ho-item .item-desc 
+{
+	color: #9cb071;
+	font-size: 14px;
+	padding-bottom: 50px;
+	line-height: 1.8;
+}
+
+
+/*
+================
+PACKAGE SECTION
+================
+*/
+.destanition
+{
+	height: 100vh;
+	padding-top: 100px;
+	width:100%;
+	margin: auto;
+}
+
+.destanition .dest-title
+{
+	text-align: center;
+	padding-bottom: 50px;
+}
+
+.destanition .dest-con
+{
+	display: flex;
+	justify-content:space-between;
+}
+
+.destanition .dest-con .dest-item
+{
+	width: 32%;
+	height: auto;
+	margin-right: 3%;
+	position:relative;
+	box-shadow: 0px 0px 10px 1px rgba(37, 73, 214, 0.18);
+	margin-bottom: 30px;
+	transition: .6s;
+}
+
+.destanition .dest-con .dest-item .img-item
+{
+	width: 100%;
+	height: 300px;
+	position: relative;
+}
+
+.destanition .dest-con .dest-item  img
+{
+	width: 100%;
+	height: 250px;
+	position: relative;
+	cursor:pointer;
+}
+
+.destanition .dest-con .dest-item  .item-price
+{
+	position: absolute;
+	font-size:18px;
+	font-weight: bold;
+	color:#fff;
+	height: 50px;
+	width: 50px;
+	background: #678A2E;
+	border-radius: 100%;
+	bottom:56%;
+	left:20px;
+	line-height:30px;
+	padding: 10px 0 0 10px;
+	box-shadow: 0px 0px 13px rgba(0,0,0,1);
+	cursor:pointer;
+}
+	
+.destanition .dest-con .dest-item  .item-star
+{
+	color:#678A2E;
+	background: #fff;
+	position: absolute;
+	right: 0;
+	bottom: 59%;
+	padding:8px 2px 5px 3px;
+	font-size: 15px;
+	cursor:pointer;
+}
+
+.destanition .dest-con .dest-item .desc-item
+{
+	 
+	padding-left:15px;
+	padding-top:40px;
+	border: none;
+}
+
+.destanition .dest-con .dest-item .desc-item .desc-title
+{
+	padding-bottom:10px;
+}
+
+.destanition .dest-con .dest-item .desc-item .desc-con
+{
+	line-height:1.8;
+	padding-bottom: 10px;
+	color: #888;
+}
+
+.destanition .dest-con .dest-item .desc-item .desc-loca
+{
+	color: #888;
+	padding-top: 20px;
+	padding-bottom:30px
+}
+
+.destanition .dest-con .dest-item .desc-item .desc-loca span
+{
+	color: #678A2E;
+	padding-right: 5px;
+	padding-left: 5px;
+}
+.destanition .dest-con .dest-item:hover
+{
+	opacity: 0.8;
+	transform: scale(1.02);
+	cursor:pointer;
+}
+
+/*
+===================
+TRAVELLING SECTION
+===================
+*/
+.travelling
+{
+	background:rgba(73,65,23,0.1);
+	height:auto;
+	width:100%;
+	margin-top: 100px;
+	padding-bottom: 120px;
+}
+
+.travelling .trav-title
+{
+	text-align:center;
+	padding: 100px 0 50px 0;
+	color:#678A2E;
+}
+
+.travelling .trav-con
+{
+	display: flex;
+	justify-content:: space-between;
+	padding-bottom: 30px;
+}
+
+.travelling .trav-con:last-child
+{
+	padding-bottom:0px;
+}
+
+.travelling .trav-con .con-item
+{
+	width: 33%;
+	height:auto;
+	margin-right: 2%;
+	background:url("../images/travel_site_img/travelling/travel-1.jpg");
+	background-position: center;
+	background-size: cover;
+	border-radius: 5px;
+}
+
+.travelling .trav-con .con-item .item-title
+{
+	padding: 100px 0;
+	text-align: center;
+	color: #fff;
+	font-size: 30px;
+}
+
+.travelling .trav-con .sec
+{
+	background:url("../images/travel_site_img/travelling/travel-2.jpg");
+	background-position: center;
+	background-size: cover;
+}
+
+.travelling .trav-con .ther 
+{
+	background:url("../images/travel_site_img/travelling/travel-3.jpg");
+	background-position: center;
+	background-size: cover;
+}
+.travelling .trav-con .four
+{
+	background:url("../images/travel_site_img/travelling/travel-4.jpg");
+	background-position: center;
+	background-size: cover;
+}
+
+.travelling .trav-con .t
+{
+	background:url("../images/travel_site_img/travelling/travel-8.jpg");
+	background-position: center;
+	background-size: cover;
+}
+
+.travelling .trav-con .tt
+{
+	background:url("../images/travel_site_img/travelling/travel-6.jpg");
+	background-position: center;
+	background-size: cover;
+}
+.travelling .trav-con .ttt
+{
+	background:url("../images/travel_site_img/travelling/travel-5.jpg");
+	background-position: center;
+	background-size: cover;
+}
+.travelling .trav-con .tttt
+{
+	background:url("../images/travel_site_img/travelling/travel-7.jpg");
+	background-position: center;
+	background-size: cover;
+}
+
+.travelling .trav-con .con-item:hover
+{
+	transform: scale(1.05);
+	opacity:.6;
+}
+
+/*
+============= 
+ GET SECTION
+============= 
+*/
+.Get
+{
+	background:linear-gradient(rgba(73,65,23,0.3) , rgba(152,255,125,0.6)) ,url("../images/travel_site_img/Get/pexels-michael-block-3225528.jpg");
+	background-size: cover;
+	background-position:center;
+	width: 100%;
+	height: 600px;
+	background-attachment: fixed;
+	position: relative;
+}
+
+.Get .book
+{
+	width: 100%;
+	height: auto;
+	background: rgba(73,65,23,0.7);
+	padding: 50px 0;
+	position: absolute;
+	top: 35%;
+}
+
+.Get .book .book-con
+{
+	width:60%;
+	margin: auto;
+	display: flex;
+	justify-content:space-between;
+	padding: 10px 0;
+	color: #fff;
+}
+
+.Get .book .book-con .con-title
+{
+	padding-left: 5px;
+	padding-bottom: 5px;
+	font-size: 30px;
+}
+
+.Get .book .book-con .con-desc 
+{
+	font-size: 13px;
+}
+
+.Get .book .book-con .new .new-text
+{
+	position:relative;
+}
+
+.Get .book .book-con .new .new-text input:first-child
+{
+	border:none;
+	border-radius: 20px;
+	box-shadow: 3px 3px 10px rgba(0,0,0,0.3);
+	padding: 15px 150px 15px 30px;
+	outline:none;
+}
+
+.Get .book .book-con .new .new-text input:last-child
+{
+	padding: 10px 20px;
+	border-radius:20px;
+	border: none;
+	background:rgba(0,255,0,0.5);
+	color: #fff;
+	position:absolute;
+	right: .5%;
+	bottom: 5%;
+	width: 30%;
+	height: 90%;
+	font-size: 15px;
+	cursor:pointer;
+}
+
+.Get .book .book-con .new .new-text input:last-child:hover
+{
+	background:rgba(0,255,0,0.7);
+}
+
+/*
+================ 
+ REVIEW SECTION
+================ 
+*/
+.review
+{
+	width: 100%;
+	padding: 100px 0;
+	height: auto;
+	background: #fff;
+}
+
+.review .review-title
+{
+	text-align: center;
+	padding: 0px 0 50px 0 ;
+	font-size: 40px;
+	color: #25a117;
+}
+
+.review .review-con 
+{
+	display: flex;
+	justify-content: space-between;
+}
+
+.review .review-con .can-item
+{
+	width: 30%;
+	height: auto;
+}
+
+.review .review-con .review-desc
+{
+	width: 100%;
+	height: auto;
+	box-shadow: 7px 7px 10px rgba(152,255,125,0.2), -7px -7px 10px  rgba(152,255,125,0.2);
+	text-align: center;
+}
+
+.review .review-con .review-desc .item-desc
+{
+	color: #888;
+	line-height: 1.8;
+	font-size: 15.6px;
+	padding-bottom:30px;
+	padding-top: 70px;
+	padding-left: 5px;
+	padding-right: 10px;
+}
+
+.review .review-con .review-desc .item-name
+{
+	padding-bottom: 15px;
+	font-size: 25px;
+}
+
+.review .review-con .review-desc .item-city
+{
+	font-size: 13px;
+	color: #888;
+	padding-bottom: 40px;
+}
+
+.review .review-con .review-img 
+{
+	width: 50px;
+	height: 50px;
+	border-radius: 100%;
+	position: absolute;
+	left: 43%;
+	bottom: -8%
+}
+
+.review .review-con .t 
+{
+	position: relative;
+}
+
+.review .review-con .review-desc .item-desc::before
+{
+	content: '\201d';
+	display: block;
+	position: absolute;
+	font-size: 100px;
+	color: #25a117;
+	font-family: suns-serif;
+	left: 44%;
+	top: -20px;
+}
+/*
+================ 
+ CONTACT SECTION
+================ 
+*/
+.contact
+{
+	width: 100%;
+	height: auto;
+	background:linear-gradient(#306754 , #bce954);
+}
+
+.contact .cont-con
+{
+	padding-top: 200px;
+	color: #fff;
+	display: flex;
+	justify-content: space-between;
+	padding-bottom: 30px;
+}
+
+.contact .cont-con .con-desc
+{
+	width: 23%;
+	height: auto;
+}
+
+.contact .cont-con .con-desc:first-child
+{
+	width:30%;
+}
+
+.contact .cont-con .con-desc h1
+{
+	height: 65px;
+	width: 50%;
+	padding-bottom: 20px;
+}
+
+.contact .cont-con .con-desc .desc-brand
+{
+	font-size: 16px;
+	line-height: 1.8;
+	padding-bottom: 20px;
+	color: #ccc;
+}
+
+.contact .cont-con .con-item
+{
+	height: auto;
+}
+
+.contact .cont-con .con-item .con-title
+{
+	font-size:25px;
+	padding-bottom: 30px;
+}
+
+.contact .cont-con .con-item .con-list
+{
+	list-style: none;
+}
+
+.contact .cont-con .con-item .con-list .list-item
+{
+	padding-bottom: 20px;
+}
+	
+.contact .cont-con .con-item .con-list a 
+{
+	text-decoration:none;
+	color: #ccc;
+	font-size: 16px;	
+}
+
+.contact .cont-con .con-item .con-list i 
+{
+	color: #fff;
+	font-size: 20px;
+	padding-right: 20px;
+}
+
+ .contact .cont-con hr 
+ {
+	 background: #888;
+ }
+ 
+ .contact  .footer-desc 
+ {
+	 font-size: 15px;
+	 color:#ddd;
+	 padding-bottom: 50px;
+	 color: #fff;
+	 padding-top: 20px;
+	 text-align: center;
+ }
+ 
+  
